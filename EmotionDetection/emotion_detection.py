@@ -1,9 +1,10 @@
 import requests
 
-def emotion_detector(text_to_analyze):
+def emotion_detector():
     """
     Use the Emotion Predict function of the Watson NLP Library.
     """
+    text_to_analyze = input()
     URL = 'https://sn-watson-emotion.labs.skills.network/v1/watson.runtime.nlp.v1/NlpService/EmotionPredict'
     
     headers = {
@@ -30,5 +31,5 @@ def emotion_detector(text_to_analyze):
     print("'dominant_emotion':", dominant_name)
     print("}")
 
-emotion_detector("I hate working long hours.")
+emotion_detector()
 
