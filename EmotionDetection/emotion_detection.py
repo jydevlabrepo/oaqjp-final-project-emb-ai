@@ -30,5 +30,5 @@ def emotion_detector(text_to_analyze):
     print("'dominant_emotion':", dominant_name)
     print("}")
 
-emotion_detector("I am so happy I am doing this.")
+emotion_detector("I hate working long hours.")
 
